@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "noslowmotion",
+	"version": "${version}",
+	"name": "noslowmotion",
+	"description": "Allows you to move in normal speed while tick rate is set to value under 20",
+	"authors": [
+		"yu"
+	],
+	"contact": {
+		"sources": "https://github.com/henryyuyhy/noslowmotion"
+	},
+	"license": "MIT",
+	"icon": "assets/noslowmotion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		
+	},
+	"mixins": [
+		"noslowmotion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
