@@ -13,10 +13,6 @@ public class UpdateTickRateS2CPacketMixin {
      */
     @Overwrite
     public static UpdateTickRateS2CPacket create(TickManager tickManager) {
-        float tickrate = tickManager.getTickRate();
-        if (tickrate <= 20) {
-            tickrate=20;
-        }
-        return new UpdateTickRateS2CPacket(tickrate, tickManager.isFrozen());
+        return new UpdateTickRateS2CPacket(20, false); //v1.0.1 now client knows nothing about what svr is doing
     }
 }
